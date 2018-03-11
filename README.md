@@ -1,6 +1,7 @@
 # node-named-pipe
 
-Linux named pipes in NodeJS (mkfifo)
+Linux named pipes in NodeJS (mkfifo) 
+[![CircleCI](https://circleci.com/gh/sepehr-laal/node-named-pipe.svg?style=svg)](https://circleci.com/gh/sepehr-laal/node-named-pipe)
 
 ```bash
 npm install named-pipe
