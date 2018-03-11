@@ -16,6 +16,7 @@
     "ipc",
     "fifo"
   ],
+  "os" : [ "!win32" ],
   "author": "Sepehr Laal",
   "license": "MIT",
   "bugs": {
