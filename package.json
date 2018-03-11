@@ -1,0 +1,31 @@
+{
+  "name": "named-pipe",
+  "version": "1.0.0",
+  "description": "Linux named pipes in NodeJS (mkfifo)",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx nyc --reporter=text --reporter=html npx mocha tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sepehr-laal/node-named-pipe.git"
+  },
+  "keywords": [
+    "mkfifo",
+    "pipe",
+    "ipc",
+    "fifo"
+  ],
+  "author": "Sepehr Laal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sepehr-laal/node-named-pipe/issues"
+  },
+  "homepage": "https://github.com/sepehr-laal/node-named-pipe#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^5.0.4",
+    "nyc": "^11.4.1"
+  }
+}
