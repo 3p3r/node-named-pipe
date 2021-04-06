@@ -6,7 +6,7 @@ function mkfifoSync(path) {
   if (typeof perm !== 'number') {
     throw new Error('permission must be a number');
   }
-  const proc = spawnSync('mkfifo', [path, '-m', perm], { stdio: 'ignore' });
+  const proc = spawnSync('mkfifo', ['-m', perm, path], { stdio: 'ignore' });
   if (proc.status !== 0 || !existsSync(path)) {
     throw new Error('unable to create the pipe. do you have permissions?');
   }
@@ -24,7 +24,7 @@ function mkfifo(path) {
         'async version called without a callback. Use "mkfifoSync"'
       );
     })();
-  const proc = spawn('mkfifo', [path, '-m', perm], { stdio: 'ignore' });
+  const proc = spawn('mkfifo', ['-m', perm, path], { stdio: 'ignore' });
   proc.once('exit', status => {
     exists(path, success => {
       if (status !== 0 || !success) {
